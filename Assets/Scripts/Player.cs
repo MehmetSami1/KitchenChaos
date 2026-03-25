@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class Player : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
+    [SerializeField] private GameInput gameInput;
 
 
     private bool isWalking;
@@ -11,24 +12,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        Vector2 inputVector = new Vector2();
-
-        if (Keyboard.current.wKey.isPressed){
-            inputVector.y = +1;
-        }
-        if (Keyboard.current.sKey.isPressed)
-        {
-            inputVector.y = -1;
-        }
-        if (Keyboard.current.dKey.isPressed)
-        {
-            inputVector.x = +1;
-        }
-        if (Keyboard.current.aKey.isPressed)
-        {
-            inputVector.x = -1;
-        }
-        inputVector=inputVector.normalized;
+        Vector2 inputVector = gameInput.GetMovementVectorNormalized();
 
         Vector3 moveDir = new Vector3(inputVector.x,0,inputVector.y);
         transform.position += moveDir * Time.deltaTime * speed;
