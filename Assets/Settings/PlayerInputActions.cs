@@ -104,7 +104,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Interacts"",
                     ""type"": ""Button"",
-                    ""id"": ""d3608633-fc89-4757-a6d3-1258c4c850cf"",
+                    ""id"": ""67537fad-4173-438d-9b53-a6db71357b0d"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -235,7 +235,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""efd3ce17-5ba8-4a40-bb0d-fefbbabca18f"",
+                    ""id"": ""5551ec0d-bd28-44a4-8084-7cd5032ec53c"",
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
